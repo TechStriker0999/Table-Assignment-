@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter Your Table Here</h2>
+    <input type="number" id="input1">
+
+    <h2>Enter Your Table Lenght</h2>
+    <input type="number" id="input2">
+
+    <button onclick="generateResult()">Generate Table</button>
+
+    <div id="result">
+
+    </div>
+
+
+
+    <script>
+             function generateResult(){
+             let input3 = document.getElementById("input1").value;
+             let input4 = document.getElementById("input2").value;
+             
+             let result="";
+
+             for (let i=1; i<=input4 ; i++){
+             result += input3 + "x" + i + "=" + (i*input3) + "\n";
+             }
+
+             document.getElementById("result").innerText=result;
+            }
+
+
+
+    </script>
+</body>
+</html>
